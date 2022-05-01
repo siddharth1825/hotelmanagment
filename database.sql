@@ -1,3 +1,5 @@
+CREATE DATABASE hotel_database;
+
 CREATE TABLE guests(
     guest_id VARCHAR(255) NOT NULL PRIMARY KEY,
     guest_name VARCHAR (255) NOT NULL,
@@ -16,8 +18,8 @@ CREATE TABLE room(
 CREATE TABLE staff(
     staff_id VARCHAR(64) NOT NULL PRIMARY KEY,
     staff_name VARCHAR(255) NOT NULL,
-    Staff_attendence NOT NULL DEFAULT 'absent',
-    
+    staff_attendence VARCHAR(255) NOT NULL DEFAULT 'absent',
+
 
     UNIQUE(staff_id)
 );
