@@ -17,6 +17,7 @@ CREATE TABLE staff(
     staff_id VARCHAR(64) NOT NULL PRIMARY KEY,
     staff_name VARCHAR(255) NOT NULL,
     Staff_attendence NOT NULL DEFAULT 'absent',
+    
 
     UNIQUE(staff_id)
 );
